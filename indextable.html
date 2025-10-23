@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML ট্যাগ ও অ্যাট্রিবিউট তালিকা</title>
+  <style>
+    body {
+      font-family: "Noto Sans Bengali", sans-serif;
+      background: #f7f7f7;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+    }
+
+    th,
+    td {
+      border: 1px solid #aaa;
+      padding: 8px 10px;
+      vertical-align: top;
+    }
+
+    th {
+      background: #007acc;
+      color: white;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background: #f1f1f1;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>📘 HTML ট্যাগ, অ্যাট্রিবিউট ও কাজ</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Attribute</th>
+        <th>কাজ (Function)</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <!-- Basic Structure -->
+      <tr>
+        <td>&lt;!DOCTYPE&gt;</td>
+        <td>–</td>
+        <td>HTML এর ভার্সন ঘোষণা করে</td>
+      </tr>
+      <tr>
+        <td>&lt;html&gt;</td>
+        <td>lang</td>
+        <td>পুরো HTML ডকুমেন্টের মূল অংশ</td>
+      </tr>
+      <tr>
+        <td>&lt;head&gt;</td>
+        <td>–</td>
+        <td>মেটা তথ্য, টাইটেল, CSS/JS লিঙ্ক রাখে</td>
+      </tr>
+      <tr>
+        <td>&lt;title&gt;</td>
+        <td>–</td>
+        <td>ব্রাউজারের ট্যাবের নাম</td>
+      </tr>
+      <tr>
+        <td>&lt;body&gt;</td>
+        <td>bgcolor, background</td>
+        <td>মূল কনটেন্ট অংশ</td>
+      </tr>
+
+      <!-- Text & Formatting -->
+      <tr>
+        <td>&lt;h1&gt;–&lt;h6&gt;</td>
+        <td>id, class, style</td>
+        <td>শিরোনাম টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;</td>
+        <td>align, class, style</td>
+        <td>প্যারাগ্রাফ টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;br&gt;</td>
+        <td>–</td>
+        <td>লাইন ব্রেক</td>
+      </tr>
+      <tr>
+        <td>&lt;hr&gt;</td>
+        <td>color, width, size</td>
+        <td>বিভাজক লাইন</td>
+      </tr>
+      <tr>
+        <td>&lt;b&gt;</td>
+        <td>–</td>
+        <td>Bold টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;i&gt;</td>
+        <td>–</td>
+        <td>Italic টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;u&gt;</td>
+        <td>–</td>
+        <td>Underline টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;strong&gt;</td>
+        <td>–</td>
+        <td>গুরুত্বপূর্ণ টেক্সট (SEO-তেও প্রভাব ফেলে)</td>
+      </tr>
+      <tr>
+        <td>&lt;em&gt;</td>
+        <td>–</td>
+        <td>জোর দেওয়া টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;mark&gt;</td>
+        <td>–</td>
+        <td>হাইলাইট করা টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;small&gt;</td>
+        <td>–</td>
+        <td>ছোট আকারের টেক্সট</td>
+      </tr>
+      <tr>
+        <td>&lt;del&gt;</td>
+        <td>–</td>
+        <td>কেটে দেওয়া লেখা</td>
+      </tr>
+      <tr>
+        <td>&lt;ins&gt;</td>
+        <td>–</td>
+        <td>নতুন যুক্ত লেখা</td>
+      </tr>
+      <tr>
+        <td>&lt;sup&gt;</td>
+        <td>–</td>
+        <td>উপরের সূচক লেখা</td>
+      </tr>
+      <tr>
+        <td>&lt;sub&gt;</td>
+        <td>–</td>
+        <td>নিচের সূচক লেখা</td>
+      </tr>
+      <tr>
+        <td>&lt;pre&gt;</td>
+        <td>–</td>
+        <td>যেমন আছে ঠিক তেমনি টেক্সট দেখায় (whitespace সহ)</td>
+      </tr>
+      <tr>
+        <td>&lt;code&gt;</td>
+        <td>–</td>
+        <td>কোড প্রদর্শনের জন্য</td>
+      </tr>
+      <tr>
+        <td>&lt;blockquote&gt;</td>
+        <td>cite</td>
+        <td>উক্তি বা উদ্ধৃতি দেখায়</td>
+      </tr>
+      <tr>
+        <td>&lt;q&gt;</td>
+        <td>cite</td>
+        <td>ছোট উদ্ধৃতি</td>
+      </tr>
+      <tr>
+        <td>&lt;abbr&gt;</td>
+        <td>title</td>
+        <td>সংক্ষিপ্ত রূপ (abbreviation)</td>
+      </tr>
+      <tr>
+        <td>&lt;address&gt;</td>
+        <td>–</td>
+        <td>ঠিকানা বা লেখকের তথ্য</td>
+      </tr>
+
+      <!-- Links -->
+      <tr>
+        <td>&lt;a&gt;</td>
+        <td>href, target, title, rel</td>
+        <td>হাইপারলিঙ্ক তৈরি করে</td>
+      </tr>
+      <tr>
+        <td>&lt;base&gt;</td>
+        <td>href, target</td>
+        <td>ডিফল্ট লিঙ্ক বেস URL নির্ধারণ করে</td>
+      </tr>
+
+      <!-- Image & Media -->
+      <tr>
+        <td>&lt;img&gt;</td>
+        <td>src, alt, width, height, title</td>
+        <td>ছবি দেখায়</td>
+      </tr>
+      <tr>
+        <td>&lt;audio&gt;</td>
+        <td>src, controls, autoplay, loop</td>
+        <td>অডিও যোগ করে</td>
+      </tr>
+      <tr>
+        <td>&lt;video&gt;</td>
+        <td>src, controls, autoplay, loop, poster</td>
+        <td>ভিডিও যোগ করে</td>
+      </tr>
+      <tr>
+        <td>&lt;source&gt;</td>
+        <td>src, type</td>
+        <td>ভিডিও/অডিও সোর্স নির্ধারণ করে</td>
+      </tr>
+      <tr>
+        <td>&lt;track&gt;</td>
+        <td>src, kind, srclang, label</td>
+        <td>সাবটাইটেল ট্র্যাক</td>
+      </tr>
+      <tr>
+        <td>&lt;iframe&gt;</td>
+        <td>src, width, height, name, allowfullscreen</td>
+        <td>অন্য পেজ এমবেড করে</td>
+      </tr>
+
+      <!-- Lists -->
+      <tr>
+        <td>&lt;ul&gt;</td>
+        <td>type</td>
+        <td>বুলেট লিস্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;ol&gt;</td>
+        <td>type, start</td>
+        <td>সংখ্যাযুক্ত লিস্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;li&gt;</td>
+        <td>value</td>
+        <td>লিস্ট আইটেম</td>
+      </tr>
+      <tr>
+        <td>&lt;dl&gt;</td>
+        <td>–</td>
+        <td>ডেফিনিশন লিস্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;dt&gt;</td>
+        <td>–</td>
+        <td>শব্দ (term)</td>
+      </tr>
+      <tr>
+        <td>&lt;dd&gt;</td>
+        <td>–</td>
+        <td>অর্থ বা বিবরণ</td>
+      </tr>
+
+      <!-- Table -->
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>border, cellpadding, cellspacing</td>
+        <td>টেবিল তৈরি করে</td>
+      </tr>
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>–</td>
+        <td>টেবিলের শিরোনাম</td>
+      </tr>
+      <tr>
+        <td>&lt;tr&gt;</td>
+        <td>–</td>
+        <td>সারি</td>
+      </tr>
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>colspan, rowspan</td>
+        <td>হেডার সেল</td>
+      </tr>
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>colspan, rowspan</td>
+        <td>ডেটা সেল</td>
+      </tr>
+      <tr>
+        <td>&lt;thead&gt;</td>
+        <td>–</td>
+        <td>টেবিলের হেড অংশ</td>
+      </tr>
+      <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>–</td>
+        <td>টেবিলের বডি অংশ</td>
+      </tr>
+      <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>–</td>
+        <td>টেবিলের ফুটার অংশ</td>
+      </tr>
+
+      <!-- Form -->
+      <tr>
+        <td>&lt;form&gt;</td>
+        <td>action, method, enctype</td>
+        <td>ফর্ম তৈরি করে</td>
+      </tr>
+      <tr>
+        <td>&lt;input&gt;</td>
+        <td>type, name, value, placeholder, required</td>
+        <td>ইনপুট ফিল্ড</td>
+      </tr>
+      <tr>
+        <td>&lt;textarea&gt;</td>
+        <td>rows, cols, placeholder</td>
+        <td>বড় টেক্সট বক্স</td>
+      </tr>
+      <tr>
+        <td>&lt;select&gt;</td>
+        <td>name, multiple</td>
+        <td>ড্রপডাউন লিস্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;option&gt;</td>
+        <td>value, selected</td>
+        <td>select এর ভিতরের অপশন</td>
+      </tr>
+      <tr>
+        <td>&lt;button&gt;</td>
+        <td>type, onclick, disabled</td>
+        <td>বোতাম</td>
+      </tr>
+      <tr>
+        <td>&lt;label&gt;</td>
+        <td>for</td>
+        <td>ইনপুট ফিল্ডের লেবেল</td>
+      </tr>
+      <tr>
+        <td>&lt;fieldset&gt;</td>
+        <td>–</td>
+        <td>ফর্ম গ্রুপ তৈরি করে</td>
+      </tr>
+      <tr>
+        <td>&lt;legend&gt;</td>
+        <td>–</td>
+        <td>ফর্ম গ্রুপের শিরোনাম</td>
+      </tr>
+      <tr>
+        <td>&lt;datalist&gt;</td>
+        <td>–</td>
+        <td>ইনপুট সাজেশন লিস্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;output&gt;</td>
+        <td>name, for</td>
+        <td>গণনার ফলাফল দেখায়</td>
+      </tr>
+
+      <!-- Semantic & Layout -->
+      <tr>
+        <td>&lt;header&gt;</td>
+        <td>–</td>
+        <td>হেডার অংশ</td>
+      </tr>
+      <tr>
+        <td>&lt;footer&gt;</td>
+        <td>–</td>
+        <td>ফুটার অংশ</td>
+      </tr>
+      <tr>
+        <td>&lt;section&gt;</td>
+        <td>–</td>
+        <td>বিভাগ</td>
+      </tr>
+      <tr>
+        <td>&lt;article&gt;</td>
+        <td>–</td>
+        <td>আলাদা কনটেন্ট ব্লক</td>
+      </tr>
+      <tr>
+        <td>&lt;aside&gt;</td>
+        <td>–</td>
+        <td>সাইডবার কনটেন্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;nav&gt;</td>
+        <td>–</td>
+        <td>ন্যাভিগেশন লিঙ্কের এলাকা</td>
+      </tr>
+      <tr>
+        <td>&lt;main&gt;</td>
+        <td>–</td>
+        <td>মূল কনটেন্ট</td>
+      </tr>
+      <tr>
+        <td>&lt;figure&gt;</td>
+        <td>–</td>
+        <td>ছবি বা গ্রাফিক ব্লক</td>
+      </tr>
+      <tr>
+        <td>&lt;figcaption&gt;</td>
+        <td>–</td>
+        <td>ছবির ক্যাপশন</td>
+      </tr>
+      <tr>
+        <td>&lt;details&gt;</td>
+        <td>open</td>
+        <td>ড্রপডাউন তথ্য</td>
+      </tr>
+      <tr>
+        <td>&lt;summary&gt;</td>
+        <td>–</td>
+        <td>ডিটেইলস টাইটেল</td>
+      </tr>
+
+      <!-- Meta / Head -->
+      <tr>
+        <td>&lt;meta&gt;</td>
+        <td>charset, name, content, http-equiv</td>
+        <td>পেজ তথ্য ও এনকোডিং</td>
+      </tr>
+      <tr>
+        <td>&lt;link&gt;</td>
+        <td>rel, href, type</td>
+        <td>বাহ্যিক ফাইল লিঙ্ক (CSS, icon)</td>
+      </tr>
+      <tr>
+        <td>&lt;style&gt;</td>
+        <td>–</td>
+        <td>ইনলাইন CSS কোড</td>
+      </tr>
+      <tr>
+        <td>&lt;script&gt;</td>
+        <td>src, type, async, defer</td>
+        <td>JavaScript যোগ করে</td>
+      </tr>
+
+      <!-- Global -->
+      <tr>
+        <td>সব ট্যাগের জন্য সাধারণ</td>
+        <td>id, class, style, title, hidden, tabindex, draggable, contenteditable</td>
+        <td>সকল ট্যাগে প্রযোজ্য অ্যাট্রিবিউট</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</body>
+
+</html>
